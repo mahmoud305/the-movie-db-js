@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <section id="loadingScreen">
+        <div class="d-flex justify-content-center align-items-center  vh-100"> 
+        <div class="flower-spinner ">
+            <div class="dots-container">
+              <div class="bigger-dot">
+                <div class="smaller-dot"></div>
+              </div>
+            </div>
+          </div></div>
+    </section>
+    <section class="searchDiv">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-5 ms-auto">
+                    <input id="serachbyMovies" type="text" value="" placeholder="get movies by word..."
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                </div>
+                <div class="col-md-5 me-auto">
+                    <input  id="searchInShownMovies" type="text" value="" placeholder="Search..."
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="my-5">
+        <div class="container">
+            <div id="matchMoviesContainer" class="row my-5 ">
+
+            </div>
+            <div id="moviesContainer" class="row p-5">
+                <!-- <div class="col-md-4 my-2 p-3">
+                    <div class="movie overflow-hidden position-relative">
+                        <img src="https://image.tmdb.org/t/p/w500//xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg"
+                            class="w-100 rounded-2" alt="">
+                        <div class="imgDetails position-absolute  d-flex   align-items-center start-0 end-0 bottom-0">
+                            <div class="text-center">
+                                <h3>Free Guy</h3>
+                                <p>A bank teller called Guy realizes he is a background character in an open world video
+                                    game called Free City that will soon go offline.</p>
+                                <p>rate: 7.9 </p>
+                                <p>2021-08-11</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="ContactUs" class="ContactUs text-white my-5">
+        <div class="container">
+            <h2 class=" text-white fw-light mx-lg-5">ContactUs...</h2>
+
+            <div class="row">
+                <div class="col-md-5  contactForm  ms-auto my-4">
+                    <input id="name" type="text" value="" placeholder="Enter Your Name"
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                    <div class="alert my-2 alert-danger">Invalid UserName</div>
+                </div>
+                <div class="col-md-5  contactForm  me-auto my-4">
+                    <input id="email" type="email" value="" placeholder="Enter Your Email"
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                    <div class="alert my-2 alert-danger">Invalid Email</div>
+
+                </div>
+                <div class="col-md-5  contactForm  ms-auto my-4">
+                    <input id="phone" type="number" value="" placeholder="Enter Your Phone"
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                    <div class="alert my-2 alert-danger">Invalid UserName</div>
+                </div>
+                <div class="col-md-5  contactForm  me-auto my-4">
+                    <input id="age" type="number" value="" placeholder="Enter Your Age"
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                    <div class="alert my-2 alert-danger">Invalid Email</div>
+
+                </div>
+                <div class="col-md-5  contactForm  ms-auto my-4">
+                    <input id="password" type="password" value="" placeholder="Enter Password"
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                    <div class="alert my-2 alert-danger">Invalid UserName</div>
+                </div>
+                <div class="col-md-5  contactForm  me-auto my-4">
+                    <input id="rePassword" type="password" value="" placeholder="Enter RePassword"
+                        class=" text-white form-control bg-transparent border-0 border-bottom rounded-0 ">
+                    <div class="alert my-2 alert-danger">Invalid Email</div>
+
+                </div>
+
+                
+            </div>
+<button class="btn btn-outline-danger" id="SubmitContactForm" type="submit" disabled>Submit</button>
+
+        </div>
+
+    </section>
+
+    <section class="mySideNav  vh-100 bg-white   d-flex">
+        <div id="movingSlideNav" class=" position-relative d-flex flex-column justify-content-end  bg-main py-5 px-3 text-white">
+            
+                <div class="sideNavLinks position-absolute"> 
+                <p id="now_playing" > Now playing</p>
+                <p id="popular"> Popular </p>
+                <p id="top_rated">Top Rated</p>
+                <p id="upcoming"> UpComing </p>
+                <p id="trending">Trending</p>
+            
+                <a href="#ContactUs" class="text-decoration-none text-white">Contact Us</a>
+          
+            </div>
+            <div class="socialIcons">
+<i class="fab fa-facebook-f mx-2"></i>
+<i class="fab fa-twitter mx-2"></i>
+<i class="fas fa-globe  mx-2 "></i>
+<p class="text-muted my-2">Copyright Â© 2019 All Rights<br> Reserved.</p>
+            </div>
+        </div>
+        <div class=" visbleSideNav d-flex flex-column justify-content-between py-5">
+
+            <div class="sideNavLogo d-flex justify-content-center">
+                <img src="imges/logo.png" class="w-50" alt="">
+            </div>
+            <div id="sideNavGate" class="text-center "><i class="fa fa-align-justify"></i></div>
+            <div class="text-center">
+                <!--  -->
+                <!-- <i class="fa fa-times"></i>  -->
+                <i class="fas fa-globe d-block py-3"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <div id="reloadBtn" class="rounded-circle"><button class="btn shadow-none"> <i class="fas fa-redo-alt"></i>
+        </button></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

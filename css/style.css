@@ -1,0 +1,244 @@
+body{
+     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #000000f2 ;
+    text-align: left;
+    overflow: hidden;
+}
+.bg-main{  background-color: #000000f2 ;}
+::placeholder{
+    text-align: center;
+}
+
+input:focus{
+    color: #6c757d!important;
+
+}
+
+.imgDetails{
+    top: 150%;
+    color:#000 !important;
+    font-weight: 600;
+background-color: rgba(255, 255, 255,0.5);
+transition: all 1s;
+}
+/* .movie{
+    /* max-height: 250px; 
+} */
+.movie:hover .imgDetails{
+    top: 0%;
+}
+
+#reloadBtn{
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    background-color: royalblue;
+     /* border-radius: 50%; */
+      
+}
+#reloadBtn button{
+    width: 50px;
+    height: 50px;
+    color: #FFF !important;
+}
+
+.mySideNav{
+    z-index: 10000000;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+
+    transition: all 1s;
+}
+
+.sideNavLogo{
+    width: 50px;
+    height: 70px;
+}
+.temp{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#sideNavGate{
+    font-size: 25px;
+}
+.sideNavLinks{
+    top: 50%;
+}
+.sideNavLinks a ,.sideNavLinks p{
+    transition: color 0.5s;
+    margin: 20px 0px;
+}
+.sideNavLinks p:hover, .sideNavLinks a:hover , .socialIcons i:hover {
+    cursor: pointer;
+color: red !important;
+}
+.socialIcons i
+{
+    transition: color 0.5s;
+}
+.visbleSideNav i:hover{
+cursor: pointer;
+}
+
+.alert{
+    display: none;
+}
+
+#loadingScreen{
+background-color: rgb(39, 29, 32);
+background-image: linear-gradient(
+    117deg,#3c2747,#153fda ,#ec0fe1);
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: 999999999;
+}
+
+.flower-spinner,  .flower-spinner * {
+    box-sizing: border-box;
+  }
+
+  .flower-spinner {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flower-spinner .dots-container {
+    height: calc(70px / 7);
+    width: calc(70px / 7);
+  }
+
+  .flower-spinner .smaller-dot {
+    background: #ff1d5e;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: flower-spinner-smaller-dot-animation 2.5s 0s infinite both;
+
+  }
+
+  .flower-spinner .bigger-dot {
+    background: #ff1d5e;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    border-radius: 50%;
+    animation: flower-spinner-bigger-dot-animation 2.5s 0s infinite both;
+  }
+
+  @keyframes flower-spinner-bigger-dot-animation {
+    0%, 100% {
+      box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px;
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    25%, 75% {
+      box-shadow: rgb(255, 29, 94) 26px 0px 0px,
+      rgb(255, 29, 94) -26px 0px 0px,
+      rgb(255, 29, 94) 0px 26px 0px,
+      rgb(255, 29, 94) 0px -26px 0px,
+      rgb(255, 29, 94) 19px -19px 0px,
+      rgb(255, 29, 94) 19px 19px 0px,
+      rgb(255, 29, 94) -19px -19px 0px,
+      rgb(255, 29, 94) -19px 19px 0px;
+    }
+
+    100% {
+      transform: rotate(360deg);
+      box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px;
+    }
+  }
+
+  @keyframes flower-spinner-smaller-dot-animation {
+    0%, 100% {
+      box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px;
+    }
+
+    25%, 75% {
+      box-shadow: rgb(255, 29, 94) 14px 0px 0px,
+      rgb(255, 29, 94) -14px 0px 0px,
+      rgb(255, 29, 94) 0px 14px 0px,
+      rgb(255, 29, 94) 0px -14px 0px,
+      rgb(255, 29, 94) 10px -10px 0px,
+      rgb(255, 29, 94) 10px 10px 0px,
+      rgb(255, 29, 94) -10px -10px 0px,
+      rgb(255, 29, 94) -10px 10px 0px;
+    }
+
+    100% {
+      box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px,
+      rgb(255, 29, 94) 0px 0px 0px;
+    }
+  }
+
+@media screen and (max-width:576px) {
+    #reloadBtn{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+         /* border-radius: 50%; */
+          
+    }
+    #reloadBtn button{
+        width: 40px;
+        height: 40px;
+        color: #FFF !important;
+    }
+
+    .sideNavLinks a ,.sideNavLinks p{
+        transition: color 0.5s;
+        margin: 10px 0px;
+    }
+
+    .sideNavLinks{
+        position: static !important;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:577px)  {
+  
+}
+
