@@ -9,7 +9,7 @@ $("#sideNavGate").click(() => {
 
     let leftValue = $(".mySideNav").css("left"); console.log(leftValue);
     if (leftValue != '0px') {
-        $(".mySideNav").css("left", `0px`);
+        $(".mySideNav").animate({"left": 0},1000);
         $("#sideNavGate i").addClass("fa-times");
         $("#sideNavGate i").removeClass("fa-align-justify");
        
@@ -17,7 +17,7 @@ $("#sideNavGate").click(() => {
     }
     else {
         console.log("Hello");
-        $(".mySideNav").css("left", `-${sideNavBarWidth}px`);
+       $(".mySideNav").animate({"left": -sideNavBarWidth},1000);
         $("#sideNavGate i").addClass("fa-align-justify");
         $("#sideNavGate i").removeClass("fa-times");
         $(".sideNavLinks").animate({top: '50%'},1000);    }
